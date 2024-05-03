@@ -1,0 +1,22 @@
+# CODES USED FOR HOA 3"
+
+sudo yum install openssh-server
+sudo systemct start sshd
+sudo systemctl enable sshd
+sudo systemctl status sshd
+
+firewall-cmd --zone=public --permanent --add-service=ssh
+firewall-cmd --reload
+
+sudo systemctl reload sshd
+
+
+ssh -V
+ssh-copy-id -i jonejeous@192.168.56.xxx
+ssh jonjeous@192.168.56.xxx
+cat ~/.ssh/authorized_keys
+
+ssh jonjeous@192.168.56.xxx
+uname -a
+
+
